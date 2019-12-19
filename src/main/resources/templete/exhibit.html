@@ -1,0 +1,104 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="exhibit.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<title>アカウント登録</title>
+
+<body>
+<header>
+    <nav>
+        <div class="inner flex">
+            <div class="logo">
+                <a href="Productlist.html"><img src="images/logo.png" alt="ミリカリロゴ" align="middle" class="image"></a>
+            </div>
+            <ul class="flex">
+                <ul class="ddmenu">
+                    <li><a href="#" class="btn">アカウント</a>
+                        <ul>
+                            <li><a href="#">ログイン<br>マイページ</a></li>
+                            <li><a href="#">商品出品</a></li>
+                            <li><a href="#">ログアウト</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="btn">カート</a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+</header>
+</body>
+
+<body>
+<div class="form-container">
+    <div class="exhibit-title">
+        <h1>商品出品</h1>
+    </div>
+
+    <div class="form-horizontal">
+        <form action="#" actmethod="get">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">商品名<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <input type="text" name="productname" autocomplete="name" class="form-control" maxlength="32"
+                           required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">値段<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <input type="text" name="explanation" autocomplete="name" class="form-control" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">コメント<span class="label label-danger">任意</span></label>
+                <div class="col-sm-10">
+                    <textarea name="comment" cols="512" rows="10" style="overflow:scroll;">自由に記述してください。</textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">商品画像<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <p>画像ファイル<input type="file" name="pic"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">銀行名<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <input type="text" name="bank" autocomplete="name" class="form-control" maxlength="16" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">支店名<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <input type="text" name="bank" autocomplete="name" class="form-control" maxlength="16" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">口座番号<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <input type="text" name="bank" autocomplete="name" class="form-control" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">口座名義<span class="label label-danger">必須</span></label>
+                <div class="col-sm-10">
+                    <input type="text" name="bank" autocomplete="name" class="form-control" maxlength='32' required/>
+                </div>
+            </div>
+
+            <div align="center" class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href="#"><input type="submit" value="出品完了" class="btn-complete" name="submit"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

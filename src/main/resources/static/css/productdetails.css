@@ -1,0 +1,174 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    height: 50px;
+}
+
+.inner {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 1460px;
+}
+
+nav > .flex {
+    align-items: center;
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex li {
+    font-size: 20px;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.logo a {
+    margin: 10px 10px auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image {
+    padding: 0px 6px 0px 5px;
+    margin: 30px 5px auto;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.flex li:hover ul {
+    display: block;
+}
+
+.btn {
+    margin: 10px 10px auto;
+    background-color: transparent;
+    border: 2px solid #66CC33;
+    color: #66CC33 !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #66CC33;
+    border: 2px solid #66CC33;
+    color: #fff !important;
+}
+
+/* ▼メインメニュー項目の装飾 */
+ul.ddmenu li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+ul.ddmenu a {
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+
+/* ▼サブメニューがある場合に開く処理 */
+ul.ddmenu li:hover ul {
+    display: block;
+}
+
+/* ▼サブメニューの装飾 */
+ul.ddmenu ul {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    position: absolute;
+}
+
+/* ▼サブメニュー項目の装飾 */
+ul.ddmenu ul li {
+    width: 135px;
+}
+
+ul.ddmenu ul li a {
+    line-height: 35px;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: normal;
+}
+
+ul.ddmenu ul li a:hover {
+    background-color: #66CC33;
+}
+
+ul.ddmenu {
+    display: flex;
+
+:first-child {
+    margin-right: auto;
+}
+
+}
+
+/* ページ本文 */
+
+.productimages {
+    width: 400px;
+    height: 320px;
+    border: solid 10px #FFFFFF;
+}
+
+table {
+    margin: 100px 100px 30px 100px;
+}
+
+table,
+td,
+th {
+    border: 2px #808080 solid;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+.productname {
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+}
+
+.explanation {
+    width: 650px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.btn-center {
+    text-align: center;
+}
+
+.kartbtn {
+    background-color: #66CC33;
+    width: 150px; /*使いたい画像の幅と高さに合わせる*/
+    font-size: 30px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px
+}
