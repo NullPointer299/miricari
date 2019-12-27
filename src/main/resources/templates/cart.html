@@ -1,26 +1,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="cart.css" rel="stylesheet">
+<link href="/css/cart.css" rel="stylesheet">
 <!DOCTYPE html>
-<html>
-<!--　ページヘッダー -->
+<html lang="ja">
+<head>
+    <title>cart</title>
+</head>
 
 <body>
 <header>
     <nav>
         <div class="inner flex">
             <div class="logo">
-                <a href="Productlist.html"><img src="images/logo.png" alt="ミリカリロゴ" align="middle" class="image"></a>
+                <a href="/miricari/productlist"><img src="/images/logo.png" alt="ミリカリロゴ" align="middle"
+                                                     class="image"></a>
             </div>
             <ul class="flex">
                 <ul class="ddmenu">
                     <li><a href="#" class="btn">アカウント</a>
                         <ul>
-                            <li><a href="#">ログイン<br>マイページ</a></li>
-                            <li><a href="#">商品出品</a></li>
-                            <li><a href="#">ログアウト</a></li>
+                            <li><a href="/miricari/login">ログイン</a></li>
+                            <li><a href="/miricari/mypage">マイページ</a></li>
+                            <li><a href="/miricari/exhibit">商品出品</a></li>
+                            <li><a href="/miricari/logout">ログアウト</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="btn">カート</a></li>
+                    <li><a href="/miricari/cart" class="btn">カート</a></li>
                 </ul>
             </ul>
         </div>
@@ -31,10 +35,10 @@
 
 <div class="container">
     <h1>カート内商品</h1>
-    <table class="table-border" action="#" method="get">
+    <table class="table-border">
         <tr>
-            <td rowSpan="2" class="td-border"><a href="#"><img src="images/test.jpg" alt="商品" class="productimage"
-                                                               alt="商品"></a></td><!-- 画像表示 -->
+            <td rowSpan="2" class="td-border"><a href="#"><img src="/images/test.jpg" alt="商品" class="productimage"></a>
+            </td><!-- 画像表示 -->
             <td class="frame">【大特価】上田電動ガン M4A1　新品未使用　美品</td><!-- 商品名表示 -->
             <td rowspan="2"><input type="button" class="deletebtn" value="削除" name="delete"></td> <!--　削除ボタン -->
         </tr>
@@ -45,8 +49,8 @@
 
     <table>
         <tr>
-            <td rowSpan="2" class="td-border"><a href="#"><img src="images/test.jpg" alt="商品" class="productimage"
-                                                               alt="商品"></a></td><!-- 画像表示 -->
+            <td rowSpan="2" class="td-border"><a href="#"><img src="images/test.jpg" alt="商品" class="productimage"></a>
+            </td><!-- 画像表示 -->
             <td class="frame">【大特価】上田電動ガン M4A1　新品未使用　美品</td><!-- 商品名表示 -->
             <td rowspan="2"><input type="button" class="deletebtn" value="削除" name="delete"></td> <!--　削除ボタン -->
         </tr>
@@ -56,7 +60,8 @@
     </table>
 
     <div class="money">合計額:○○円</div><!-- 合計額表示 -->
-    <div class="btn-center"><a href="#"><input type="button" value="購入" class="purchasebtn" name="button"></a></div>
+    <div class="btn-center"><a href="/miricari/purchase"><input type="button" value="購入" class="purchasebtn"
+                                                                name="button"></a></div>
 </div>
 </body>
 </html>

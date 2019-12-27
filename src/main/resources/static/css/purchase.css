@@ -112,11 +112,6 @@ ul.ddmenu ul li a:hover {
 
 ul.ddmenu {
     display: flex;
-
-:first-child {
-    margin-right: auto;
-}
-
 }
 
 
@@ -162,7 +157,6 @@ h1 {
     width: 20%;
     font-size: 20px;
 }
-
 .col-sm-10,
 .display-product {
     float: left;

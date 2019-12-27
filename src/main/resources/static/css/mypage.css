@@ -119,11 +119,6 @@ ul.ddmenu ul li a:hover {
 
 ul.ddmenu {
     display: flex;
-
-:first-child {
-    margin-right: auto;
-}
-
 }
 
 /*ページ本文*/

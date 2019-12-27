@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="/css/login.css" rel="stylesheet"/>
+<head>
+    <title>login</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="inner flex">
+            <div class="logo">
+                <a href="/miricari/productlist"><img src="/images/logo.png" alt="ミリカリロゴ" align="middle"
+                                                     class="image"></a>
+            </div>
+            <ul class="flex">
+                <ul class="ddmenu">
+                    <li><a href="#" class="btn">アカウント</a>
+                        <ul>
+                            <li><a href="/miricari/login">ログイン</a></li>
+                            <li><a href="/miricari/mypage">マイページ</a></li>
+                            <li><a href="/miricari/exhibit">商品出品</a></li>
+                            <li><a href="/miricari/logout">ログアウト</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/miricari/cart" class="btn">カート</a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <h1>ログイン</h1>
+    <form action="/miricari/auth" method="post">
+        <input type="text" class="text" placeholder="ユーザーID" name="user_id">
+        <input type="text" class="text" placeholder="パスワード" name="password">
+        <input type="submit" value="login" class="loginbtn" name="submit">
+    </form>
+    <div class="pass-link">
+        <a href="/miricari/accountinfo">新規登録はこちら</a>
+    </div>
+</div>
+</body>
+</html>
