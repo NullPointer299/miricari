@@ -1,8 +1,9 @@
 package com.fjb3u.miricari.controller;
 
+import com.fjb3u.miricari.dao.MiricariDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @RequestMapping("/miricari")
 @Controller
@@ -40,10 +41,10 @@ public class MiricariController {
     }
 
     @RequestMapping("/auth")
-    public String auth(final ModelAndView mav) {
-        String url = "mypage";
-        // ログイン処理
-        return url;
+    public String auth(
+            @RequestParam final String id,
+            @RequestParam final String password) {
+        return MiricariDAO.auth(id, password) ? "mypage" : "login";
     }
 
     @RequestMapping("/accountinfo")
