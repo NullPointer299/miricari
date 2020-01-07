@@ -1,6 +1,8 @@
 package com.fjb3u.miricari.controller;
 
-import com.fjb3u.miricari.dao.MiricariDAO;
+import com.fjb3u.miricari.entity.User;
+import com.fjb3u.miricari.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -8,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/miricari")
 @Controller
 public class MiricariController {
+
+    @Autowired
+    private UserRepository userRepository;
 
     @RequestMapping("/productlist")
     public String getProductList() {
@@ -44,7 +49,13 @@ public class MiricariController {
     public String auth(
             @RequestParam final String id,
             @RequestParam final String password) {
-        return MiricariDAO.auth(id, password) ? "mypage" : "login";
+        final User user = userRepository.login(id, password);
+        String url;
+        if (user == null)
+            url = "/login";
+        else
+            url = "/mypage";
+        return url;
     }
 
     @RequestMapping("/accountinfo")
