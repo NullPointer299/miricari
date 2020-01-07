@@ -67,7 +67,7 @@
              Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
         -->
         <Connector port="8080" protocol="HTTP/1.1"
-                   proxyName="172.16.35.42"
+                   proxyName="localhost"
                    proxyPort="80"
                    connectionTimeout="20000"
                    redirectPort="8443"/>
